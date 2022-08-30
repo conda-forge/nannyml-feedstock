@@ -1,5 +1,5 @@
 {% set name = "nannyml" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nannyml-{{ version }}.tar.gz
-  sha256: 0e5c453256d19ef83fe36d917fb5df041cae1038312755f78b50a9f6d00b2712
+  sha256: 5a810b120e0b3e5d623909b7e4276ef719275bff6647bc90cecf2ddffd17cf6b
 
 build:
   noarch: python
