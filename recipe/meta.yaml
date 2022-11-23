@@ -1,5 +1,5 @@
 {% set name = "nannyml" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nannyml-{{ version }}.tar.gz
-  sha256: 326c1ab99713efc0d92a2eb9a3d53f0d6fb3595994b999508bf22fba1b55e221
+  sha256: d57e9933388a17c2e8bf4a937b7de5013aba2da925424f0549e848815666e475
 
 build:
   entry_points:
@@ -49,6 +49,8 @@ requirements:
     - sqlmodel >=0.0.8
     - APScheduler >=3.9.1
     - psycopg2-binary >=2.9.3
+    - analytics-python >=1.4.0
+    - python-dotenv >=0.21.0
 
 test:
   imports:
