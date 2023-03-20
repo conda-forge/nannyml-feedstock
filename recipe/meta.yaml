@@ -50,7 +50,7 @@ requirements:
     - APScheduler >=3.9.1
     - psycopg2-binary >=2.9.3
     - analytics-python >=1.4.0
-    - python-dotenv >=0.21.0
+    - python-dotenv >=1.0.0
 
 test:
   imports:
