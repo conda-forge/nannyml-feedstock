@@ -15,15 +15,15 @@ build:
     - nml=nannyml.cli.cli:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.9,<3.12
+    - python {{ python_min }}
   run:
-    - python >=3.9,<3.12
+    - python >={{ python_min }},<3.12
     - pandas >=1.5.0,<2.0.0
     - python-dateutil >=2.8.2,<3.0.0
     - scikit-learn >=1.2,<2.0.0
@@ -61,6 +61,7 @@ test:
     - nml --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/nannyml/nannyml
