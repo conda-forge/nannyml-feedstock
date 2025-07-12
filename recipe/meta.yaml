@@ -41,7 +41,7 @@ requirements:
     - rich >=12.5
     - click >=8.1.0,<9.0.0
     - pyyaml >=6.0.0,<7.0.0
-    - jinja2 <3.1
+    - jinja2 >=3.1
     - pyfiglet >=0.8.0.post1,<0.9.0
     - lightgbm >=3.3,<4.6
     - flaml >=2.3.3,<3.0.0
